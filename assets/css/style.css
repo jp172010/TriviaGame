@@ -1,0 +1,29 @@
+@font-face{
+    font-family: saiyanSans;
+    src: url(fonts/Saiyan-sans.ttf);
+}
+body{
+    background-size: 100%;
+    font-family: saiyanSans;
+}
+.container{
+    background: black;
+    width: 800px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ffffff;
+    padding: 20px;
+}
+h1{
+    font-size: 100px;
+}
+#question{
+    font-size: 60px;
+}
+h1, #question{
+    color: #ed3833;
+}
+#time, #answers{
+    color: #fef851;
+    font-size: 40px;
+}
