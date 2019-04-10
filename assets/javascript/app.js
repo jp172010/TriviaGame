@@ -42,9 +42,11 @@ window.onload = function(){
 
     function resetBtn(){
         var btn = `<input class="resetButton" type="button" value="Restart">`;
-        $(".resetButton").onclick = function(){reset()};
-        $("#answers").append(btn)
+        $("#answers").append(btn);
     };
+
+    $(document).on("click", ".resetButton", reset);
+    
 
     function reset(){
         current = 0;
@@ -55,6 +57,7 @@ window.onload = function(){
         loadQuestion(current);
         loadAnswers(current);
         run();
+        console.log("hello")
     };
 
     function checker(){
